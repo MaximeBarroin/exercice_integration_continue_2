@@ -19,7 +19,8 @@ jobs:
       - run: npm run test
       - run: npm run cover
       - name: Generate HTML report
-        run: npm run report:generate
+        run: marge /home/runner/work/exercice_integration_continue_2/exercice_integration_continue_2/reports/awesome-reports/mochawesome.html
+         report.html -f report -o /home/runner/work/exercice_integration_continue_2/exercice_integration_continue_2/reports/awesome-reports/mochawesome.html
 
 
 
