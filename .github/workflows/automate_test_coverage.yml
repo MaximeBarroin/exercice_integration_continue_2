@@ -18,10 +18,11 @@ jobs:
         run: npm install
       - run: npm run test
       - run: npm run cover
-      - name: Generate HTML report
-        run: marge /home/runner/work/exercice_integration_continue_2/exercice_integration_continue_2/reports/awesome-reports/mochawesome.html
-         report.html -f report -o /home/runner/work/exercice_integration_continue_2/exercice_integration_continue_2/reports/awesome-reports/mochawesome.html
-
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage-report
+          path: /home/runner/work/exercice_integration_continue_2/exercice_integration_continue_2/reports/awesome-reports/mochawesome.html
 
 
 
