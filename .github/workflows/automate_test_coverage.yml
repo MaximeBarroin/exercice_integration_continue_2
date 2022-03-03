@@ -18,6 +18,8 @@ jobs:
         run: npm install
       - run: npm run test
       - run: npm run cover
+      - name: Generate HTML report
+        run: npm run report:generate
 
 
 
