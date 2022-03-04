@@ -56,3 +56,5 @@ Web Report: All Tests Passing
 <p align="center"><img src="https://i.ibb.co/nCdHFs4/better-test2.png" /></p>
 
 test.json
+
+Pour les pull request  vsoch/pull-request-action fonctione correctement
